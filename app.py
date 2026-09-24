@@ -6,7 +6,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 app = Flask(__name__)
 
 GROQ_API_KEY = os.environ.get("GROQ_API_KEY")
-MODELS = [m for m in [os.environ.get("GROQ_MODEL"), "openai/gpt-oss-120b", "openai/gpt-oss-20b", "llama-3.1-8b-instant"] if m]
+MODELS = [m for m in [os.environ.get("GROQ_MODEL"), "openai/gpt-oss-120b", "openai/gpt-oss-20b"] if m]
 GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
 
 
